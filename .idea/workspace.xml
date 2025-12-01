@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e3e282c-2001-4c48-b975-996d6ade7948" name="Changes" comment="starting creation of background elements">
+    <list default="true" id="3e3e282c-2001-4c48-b975-996d6ade7948" name="Changes" comment="Road added">
       <change beforePath="$PROJECT_DIR$/Project 7, Gavin Spellman.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project 7, Gavin Spellman.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -105,7 +105,23 @@
       <option name="project" value="LOCAL" />
       <updated>1764602656691</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Store added">
+      <option name="closed" value="true" />
+      <created>1764603109337</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1764603109337</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Road added">
+      <option name="closed" value="true" />
+      <created>1764603358735</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1764603358735</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -113,6 +129,8 @@
     <MESSAGE value="Uploaded colors and dearpygui" />
     <MESSAGE value="Boilerplate and work from class added" />
     <MESSAGE value="starting creation of background elements" />
-    <option name="LAST_COMMIT_MESSAGE" value="starting creation of background elements" />
+    <MESSAGE value="Store added" />
+    <MESSAGE value="Road added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Road added" />
   </component>
 </project>
