@@ -13,6 +13,9 @@ with dearpy.window(label='Housing Affordability', width=900, height=900):
                                color=comp151Colors.BLUE, fill=comp151Colors.BLUE)
         dearpy.draw_text((100, 25), "Walmart",
                           color=comp151Colors.YELLOW, size=15)
+        #Road (Truckers road)
+        dearpy.draw_rectangle((0, 100), (900, 300),
+                              color=comp151Colors.WHITE, fill=comp151Colors.BLACK)
 
 
 
