@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e3e282c-2001-4c48-b975-996d6ade7948" name="Changes" comment="Road added">
+    <list default="true" id="3e3e282c-2001-4c48-b975-996d6ade7948" name="Changes" comment="Basic background complete. Details needed and parking lot out of range">
       <change beforePath="$PROJECT_DIR$/Project 7, Gavin Spellman.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project 7, Gavin Spellman.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +121,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764603358735</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Basic background complete. Details needed and parking lot out of range">
+      <option name="closed" value="true" />
+      <created>1764603754605</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1764603754605</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -131,6 +139,7 @@
     <MESSAGE value="starting creation of background elements" />
     <MESSAGE value="Store added" />
     <MESSAGE value="Road added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Road added" />
+    <MESSAGE value="Basic background complete. Details needed and parking lot out of range" />
+    <option name="LAST_COMMIT_MESSAGE" value="Basic background complete. Details needed and parking lot out of range" />
   </component>
 </project>
