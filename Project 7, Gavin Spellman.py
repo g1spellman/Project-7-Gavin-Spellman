@@ -8,8 +8,11 @@ dearpy.create_context()
 dearpy.create_viewport(title='Housing Affordability', width=900, height=900)
 with dearpy.window(label='Housing Affordability', width=900, height=900):
     with dearpy.drawlist(width=900, height=900):
-        dearpy.draw_arrow((100, 0), (100, 700), color=comp151Colors.LIGHT_GREY,
-                          thickness=3)
+        #Store
+        dearpy.draw_rectangle((0, 0), (900, 100),
+                               color=comp151Colors.BLUE, fill=comp151Colors.BLUE)
+        dearpy.draw_text((100, 25), "Walmart",
+                          color=comp151Colors.YELLOW, size=15)
 
 
 
