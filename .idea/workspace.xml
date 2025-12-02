@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e3e282c-2001-4c48-b975-996d6ade7948" name="Changes" comment="Begining to add images">
+    <list default="true" id="3e3e282c-2001-4c48-b975-996d6ade7948" name="Changes" comment="Attempting to get boy 1 to move">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Class work example.py" beforeDir="false" afterPath="$PROJECT_DIR$/Class work example.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project 7, Gavin Spellman.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project 7, Gavin Spellman.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +153,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764687402511</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Attempting to get boy 1 to move">
+      <option name="closed" value="true" />
+      <created>1764688213760</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1764688213760</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -168,6 +174,7 @@
     <MESSAGE value="Basic background complete. Details needed and parking lot out of range" />
     <MESSAGE value="added lines for parking lot, doors, and car placeholder" />
     <MESSAGE value="Begining to add images" />
-    <option name="LAST_COMMIT_MESSAGE" value="Begining to add images" />
+    <MESSAGE value="Attempting to get boy 1 to move" />
+    <option name="LAST_COMMIT_MESSAGE" value="Attempting to get boy 1 to move" />
   </component>
 </project>
