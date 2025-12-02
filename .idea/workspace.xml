@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e3e282c-2001-4c48-b975-996d6ade7948" name="Changes" comment="Attempting to get boy 1 to move">
+    <list default="true" id="3e3e282c-2001-4c48-b975-996d6ade7948" name="Changes" comment="got boy1 to load, however he is behind everything. Also note to self: character images must be in same file layer as project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project 7, Gavin Spellman.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project 7, Gavin Spellman.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +56,9 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\GBSpe\PycharmProjects\10\15\Project 7, Gavin Spellman" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\GBSpe\PycharmProjects\10\15\Project 7, Gavin Spellman" />
     </key>
   </component>
@@ -161,7 +165,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764688213760</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="got boy1 to load, however he is behind everything. Also note to self: character images must be in same file layer as project">
+      <option name="closed" value="true" />
+      <created>1764688678504</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1764688678504</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -175,6 +187,7 @@
     <MESSAGE value="added lines for parking lot, doors, and car placeholder" />
     <MESSAGE value="Begining to add images" />
     <MESSAGE value="Attempting to get boy 1 to move" />
-    <option name="LAST_COMMIT_MESSAGE" value="Attempting to get boy 1 to move" />
+    <MESSAGE value="got boy1 to load, however he is behind everything. Also note to self: character images must be in same file layer as project" />
+    <option name="LAST_COMMIT_MESSAGE" value="got boy1 to load, however he is behind everything. Also note to self: character images must be in same file layer as project" />
   </component>
 </project>
