@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e3e282c-2001-4c48-b975-996d6ade7948" name="Changes" comment="Basic background complete. Details needed and parking lot out of range">
-      <change beforePath="$PROJECT_DIR$/Project 7, Gavin Spellman.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project 7, Gavin Spellman.py" afterDir="false" />
+    <list default="true" id="3e3e282c-2001-4c48-b975-996d6ade7948" name="Changes" comment="added lines for parking lot, doors, and car placeholder">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class work example.py" beforeDir="false" afterPath="$PROJECT_DIR$/Class work example.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +130,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764603754605</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added lines for parking lot, doors, and car placeholder">
+      <option name="closed" value="true" />
+      <created>1764604646349</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1764604646349</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -140,6 +149,7 @@
     <MESSAGE value="Store added" />
     <MESSAGE value="Road added" />
     <MESSAGE value="Basic background complete. Details needed and parking lot out of range" />
-    <option name="LAST_COMMIT_MESSAGE" value="Basic background complete. Details needed and parking lot out of range" />
+    <MESSAGE value="added lines for parking lot, doors, and car placeholder" />
+    <option name="LAST_COMMIT_MESSAGE" value="added lines for parking lot, doors, and car placeholder" />
   </component>
 </project>

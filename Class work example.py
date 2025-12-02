@@ -25,7 +25,7 @@ with dearpy.texture_registry():
     dearpy.add_static_texture(ship_w, ship_h, ship_file_pict, tag="ship_pict")
     dearpy.add_static_texture(gold_w, gold_h, gold_file_pict, tag="gold_pict")
 with dearpy.handler_registry():
-    dearpy.add_key_press_handler(callback=move_ship) #Not moving
+    dearpy.add_key_press_handler(callback=move_ship)
 dearpy.create_viewport(title="image demo", width=800, height=800)
 with dearpy.window(label="image demo", width=800, height=800):
     with dearpy.drawlist(width=800, height=800):
