@@ -21,12 +21,23 @@ def move_boy(sender, app_data):
         boy_y += boy_speed
     with dearpy.mutex():
         dearpy.configure_item("boy_update", pmin= (boy_x, boy_y), pmax= (boy_x + 100, boy_y + 100))
-#--------Trucks Near Store-------------------------
+#--------Truck 1-------------------------
 truck_x=0
 truck_y=100
 truck_speed=15
 truck_w, truck_h, channels, truck_file_pict= dearpy.load_image("dumper_1_2.png")
-#---------------------------------------------------
+#---------Truck 2----------------------------------
+truck2_x=0
+truck2_y=200
+truck2_speed=15
+truck2_w, truck2_h, channels, truck2_file_pict= dearpy.load_image("dumper_1_2.png")
+
+#--------Truck 3----------------------------------
+truck3_x=0
+truck3_y=300
+truck3_speed=15
+truck3_w, truck3_h, channels, truck3_file_pict= dearpy.load_image("dumper_1_2.png")
+#--------------------------------------------------
 dearpy.create_context()
 #Add texture each time
 with dearpy.texture_registry():
