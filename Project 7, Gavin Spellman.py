@@ -52,6 +52,21 @@ bear_x=0
 bear_y=400
 bear_speed=7
 bear_w, bear_h, channels, bear_file_pict= dearpy.load_image("bear.png")
+#----Car----------------------------------------------
+car_x=0
+car_y=500
+car_speed=7
+car_w, car_h, channels, car_file_pict= dearpy.load_image("firebrigade_1_2.png")
+#-----Car2--------------------------------------------
+car2_x=0
+car2_y=500
+car2_speed=7
+car2_w, car2_h, channels, car2_file_pict= dearpy.load_image("firebrigade_1_2.png")
+#-----Car3--------------------------------------------
+car3_x=0
+car3_y=500
+car3_speed=7
+car3_w, car3_h, channels, car3_file_pict= dearpy.load_image("firebrigade_1_2.png")
 
 
 
