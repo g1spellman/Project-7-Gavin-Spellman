@@ -103,8 +103,8 @@ dearpy.setup_dearpygui()
 dearpy.show_viewport()
 while dearpy.is_dearpygui_running():
     truck_x+= truck_speed
-    if truck_x>=900 or truck_x <=0:
-         truck_speed=-truck_speed
+    if truck_x>=900:
+         truck_x=-truck_w
     dearpy.configure_item("truck_update", pmin=(truck_x, truck_y), pmax=(truck_x+truck_w, truck_y+truck_h))
     dearpy.render_dearpygui_frame()
 dearpy.start_dearpygui()
