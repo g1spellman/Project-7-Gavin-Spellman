@@ -22,8 +22,8 @@ def move_boy(sender, app_data):
     with dearpy.mutex():
         dearpy.configure_item("boy_update", pmin= (boy_x, boy_y), pmax= (boy_x + 100, boy_y + 100))
 #--------Trucks Near Store-------------------------
-truck_x=400
-truck_y=0
+truck_x=0
+truck_y=100
 truck_speed=5
 truck_w, truck_h, channels, truck_file_pict= dearpy.load_image("dumper_1_2.png")
 #---------------------------------------------------
@@ -99,5 +99,8 @@ with dearpy.window(label='Get to the car!', width=900, height=1000):
 #Boiler Plate----------------------------------------------------------
 dearpy.setup_dearpygui()
 dearpy.show_viewport()
+while dearpy.is_dearpygui_running():
+    truck_x+= 1
+    dearpy.configure_item("truck_update", pmin=(truck_x, truck_y), pmax=(truck_x+truck_w, truck_y+truck_h))
+    dearpy.render_dearpygui_frame()
 dearpy.start_dearpygui()
-dearpy.destroy_context()

@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e3e282c-2001-4c48-b975-996d6ade7948" name="Changes" comment="Starting on trucks">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Class work example.py" beforeDir="false" afterPath="$PROJECT_DIR$/Class work example.py" afterDir="false" />
+    <list default="true" id="3e3e282c-2001-4c48-b975-996d6ade7948" name="Changes" comment="One truck, unmoving and large">
       <change beforePath="$PROJECT_DIR$/Project 7, Gavin Spellman.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project 7, Gavin Spellman.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -206,7 +204,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764690520503</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="One truck, unmoving and large">
+      <option name="closed" value="true" />
+      <created>1764693080670</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1764693080670</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -225,6 +231,7 @@
     <MESSAGE value="saving to test code" />
     <MESSAGE value="Boy is in the correct spot, spawns in on side but normal once it moves" />
     <MESSAGE value="Starting on trucks" />
-    <option name="LAST_COMMIT_MESSAGE" value="Starting on trucks" />
+    <MESSAGE value="One truck, unmoving and large" />
+    <option name="LAST_COMMIT_MESSAGE" value="One truck, unmoving and large" />
   </component>
 </project>
