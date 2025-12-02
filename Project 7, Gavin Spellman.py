@@ -3,15 +3,38 @@
 import dearpygui.dearpygui as dearpy
 #Colors
 import comp151Colors
-#----------------Image Repository-----------------------
-
+#----------------Player Character-----------------------
+boy_x=100
+boy_y=300
+boy_speed=3
+boy_w, boy_h, channels, boy1_file_pict= dearpy.load_image("boy1.png")
+def move_boy(sender, app_data):
+    key=app_data
+    global boy_x, boy_y, boy_speed, boy_h, boy_w
+    if key == dearpy.mvKey_Left:
+        boy_x -= boy_speed
+    elif key == dearpy.mvKey_Right:
+        boy_x += boy_speed
+    elif key == dearpy.mvKey_Up:
+        boy_y -= boy_speed
+    elif key == dearpy.mvKey_Down:
+        boy_y += boy_speed
+    with dearpy.mutex():
+        dearpy.configure_item("boy_update", pmin= (boy_x, boy_y), pmax= (boy_x + boy_w, boy_y + boy_h))
 
 
 #---------------------------------------------------
 dearpy.create_context()
+with dearpy.texture_registry():
+    dearpy.add_static_texture(boy_w, boy_h, boy1_file_pict, tag="boy1_pict")
+with dearpy.handler_registry():
+    dearpy.add_key_press_handler(callback=move_boy)
 dearpy.create_viewport(title='Get to the car!', width=900, height=1000)
 with dearpy.window(label='Get to the car!', width=900, height=1000):
     with dearpy.drawlist(width=900, height=900):
+        #Boy
+        dearpy.draw_image("boy1_pict", (boy_x, boy_y),
+                          (boy_x + boy_w * 2, boy_y + boy_h * 2), tag="boy_update")
         #Store
         dearpy.draw_rectangle((0, 0), (900, 100),
                                color=comp151Colors.BLUE, fill=comp151Colors.BLUE)

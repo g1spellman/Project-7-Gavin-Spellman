@@ -1,14 +1,14 @@
 import dearpygui.dearpygui as dearpy
 import comp151Colors
 
-ship_x=100
-ship_y=300
-ship_speed=3
-ship_w, ship_h, channels, ship_file_pict= dearpy.load_image("ship.png")
+boy_x=100
+boy_y=300
+boy_speed=3
+boy_w, boy_h, channels, ship_file_pict= dearpy.load_image("ship.png")
 gold_w, gold_h, channels, gold_file_pict= dearpy.load_image("gold-pile.png")
 def move_ship(sender, app_data):
     key=app_data
-    global ship_x, ship_y, ship_speed, ship_h, ship_w
+    global boy_x, boy_y, boy_speed, boy_h, boy_w
     if key == dearpy.mvKey_Left:
         ship_x -= ship_speed
     elif key == dearpy.mvKey_Right:
@@ -22,7 +22,7 @@ def move_ship(sender, app_data):
 
 dearpy.create_context()
 with dearpy.texture_registry():
-    dearpy.add_static_texture(ship_w, ship_h, ship_file_pict, tag="ship_pict")
+    dearpy.add_static_texture(boy_w, boy_h, ship_file_pict, tag="ship_pict")
     dearpy.add_static_texture(gold_w, gold_h, gold_file_pict, tag="gold_pict")
 with dearpy.handler_registry():
     dearpy.add_key_press_handler(callback=move_ship)
@@ -31,8 +31,8 @@ with dearpy.window(label="image demo", width=800, height=800):
     with dearpy.drawlist(width=800, height=800):
         dearpy.draw_rectangle((0,0), (800,800),
                           fill=comp151Colors.BLUE)
-        dearpy.draw_image("ship_pict", (ship_x, ship_y),
-                          (ship_x+ship_w*2, ship_y+ship_h*2), tag="ship_update")
+        dearpy.draw_image("ship_pict", (boy_x, boy_y),
+                          (boy_x + boy_w * 2, boy_y + boy_h * 2), tag="ship_update")
 
 
 dearpy.setup_dearpygui()
