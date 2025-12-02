@@ -72,7 +72,7 @@ with dearpy.window(label='Get to the car!', width=900, height=1000):
 #-------------CHARACTERS--------------------------------------------------------
         #Boy
         dearpy.draw_image("boy1_pict", (boy_x, boy_y),
-                          (boy_x + boy_w, boy_y + boy_h), tag="boy_update")
+                          (boy_x + boy_w-150, boy_y + boy_h-150), tag="boy_update")
 
 
 

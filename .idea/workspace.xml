@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e3e282c-2001-4c48-b975-996d6ade7948" name="Changes" comment="got boy1 to load, however he is behind everything. Also note to self: character images must be in same file layer as project">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="3e3e282c-2001-4c48-b975-996d6ade7948" name="Changes" comment="got boy in postion, need to make him small">
       <change beforePath="$PROJECT_DIR$/Project 7, Gavin Spellman.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project 7, Gavin Spellman.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -173,7 +172,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764688678504</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="got boy in postion, need to make him small">
+      <option name="closed" value="true" />
+      <created>1764689669920</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1764689669920</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -188,6 +195,7 @@
     <MESSAGE value="Begining to add images" />
     <MESSAGE value="Attempting to get boy 1 to move" />
     <MESSAGE value="got boy1 to load, however he is behind everything. Also note to self: character images must be in same file layer as project" />
-    <option name="LAST_COMMIT_MESSAGE" value="got boy1 to load, however he is behind everything. Also note to self: character images must be in same file layer as project" />
+    <MESSAGE value="got boy in postion, need to make him small" />
+    <option name="LAST_COMMIT_MESSAGE" value="got boy in postion, need to make him small" />
   </component>
 </project>
