@@ -43,7 +43,7 @@ dog_y=300
 dog_speed=7
 dog_w, dog_h, channels, dog_file_pict= dearpy.load_image("dog2.png")
 #------Dog 2----------------------------------------
-dog2_x=100
+dog2_x=3001
 dog2_y=300
 dog2_speed=7
 dog2_w, dog2_h, channels, dog2_file_pict= dearpy.load_image("dog2.png")
@@ -91,10 +91,7 @@ with dearpy.window(label='Get to the Car!', width=900, height=1000):
                               color=comp151Colors.WHITE, fill=comp151Colors.BLACK)
         # Parking lot
         dearpy.draw_rectangle((0, 700), (900, 900),
-                              color=comp151Colors.WHITE, fill=comp151Colors.BLACK)
-        # CAR PLACEHOLDER (DELETE)
-        dearpy.draw_rectangle((400, 700), (500, 900),
-                              color=comp151Colors.BLACK, fill=comp151Colors.RED)
+                          color=comp151Colors.WHITE, fill=comp151Colors.BLACK)
         dearpy.draw_line((100, 700), (100, 900),
                          color=comp151Colors.WHITE)
         dearpy.draw_line((200, 700), (200, 900),
@@ -164,12 +161,12 @@ while dearpy.is_dearpygui_running():
     dog_x += dog_speed
     if dog_x >= 900 or dog_x <= 0:
         dog_speed=-dog_speed
-    dearpy.configure_item("dog_update", pmin=(dog_x, dog_y), pmax=(dog_x+dog_w, dog_y+dog_h))
+    dearpy.configure_item("dog_update", pmin=(dog_x, dog_y), pmax=(dog_x+dog_w+50, dog_y+dog_h+50))
     #Dog 2
     dog2_x += dog2_speed
     if dog2_x >= 900 or dog2_x <= 0:
         dog2_speed = -dog2_speed
-    dearpy.configure_item("dog2_update", pmin=(dog2_x, dog2_y), pmax=(dog2_x + dog2_w, dog2_y + dog2_h))
+    dearpy.configure_item("dog2_update", pmin=(dog2_x, dog2_y), pmax=(dog2_x + dog2_w+50, dog2_y + dog2_h+50))
 
 
 #Additional Boiler Plate
