@@ -4,8 +4,8 @@ import dearpygui.dearpygui as dearpy
 #Colors
 import comp151Colors
 #----------------Player Character-----------------------
-boy_x=175
-boy_y=-200
+boy_x=400
+boy_y=0
 boy_speed=5
 boy_w, boy_h, channels, boy1_file_pict= dearpy.load_image("boy1.png")
 def move_boy(sender, app_data):
@@ -20,7 +20,7 @@ def move_boy(sender, app_data):
     elif key == dearpy.mvKey_Down:
         boy_y += boy_speed
     with dearpy.mutex():
-        dearpy.configure_item("boy_update", pmin= (boy_x, boy_y), pmax= (boy_x + boy_w, boy_y + boy_h))
+        dearpy.configure_item("boy_update", pmin= (boy_x, boy_y), pmax= (boy_x + 100, boy_y + 100))
 #---------------------------------------------------
 dearpy.create_context()
 with dearpy.texture_registry():
@@ -72,7 +72,7 @@ with dearpy.window(label='Get to the car!', width=900, height=1000):
 #-------------CHARACTERS--------------------------------------------------------
         #Boy
         dearpy.draw_image("boy1_pict", (boy_x, boy_y),
-                          (boy_x + boy_w-150, boy_y + boy_h-150), tag="boy_update")
+                          (boy_x + boy_w+100, boy_y + boy_h+100), tag="boy_update")
 
 
 
