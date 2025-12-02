@@ -39,10 +39,12 @@ truck3_speed=15
 truck3_w, truck3_h, channels, truck3_file_pict= dearpy.load_image("dumper_1_2.png")
 #--------------------------------------------------
 dearpy.create_context()
-#Add texture each time
+#Texture Loadout (add each time)
 with dearpy.texture_registry():
     dearpy.add_static_texture(boy_w, boy_h, boy1_file_pict, tag="boy1_pict")
     dearpy.add_static_texture(truck_w, truck_h, truck_file_pict, tag="truck_pict")
+    dearpy.add_static_texture(truck2_w, truck2_h, truck2_file_pict, tag="truck2_pict")
+    dearpy.add_static_texture(truck3_w, truck3_h, truck3_file_pict, tag="truck3_pict")
 #------------------------------------------------
 with dearpy.handler_registry():
     dearpy.add_key_press_handler(callback=move_boy)
@@ -94,10 +96,13 @@ with dearpy.window(label='Get to the car!', width=900, height=1000):
                           (boy_x + boy_w+100, boy_y + boy_h+100), tag="boy_update")
         #Truck 1
         dearpy.draw_image("truck_pict", (truck_x, truck_y),
-                          (truck_x + boy_w+100, truck_y + boy_h+100), tag="truck_update")
+                          (truck_x + truck_w+100, truck_y + truck_h+100), tag="truck_update")
         #Truck 2
+        dearpy.draw_image("truck_pict", (truck2_x, truck2_y),
+                          (truck2_x + truck_w+100, truck2_y + truck2_h+100), tag="truck2_update")
         #Truck 3
-
+        dearpy.draw_image("truck_pict", (truck3_x, truck3_y),
+                          (truck3_x + truck3_w + 100, truck3_y + truck3_h + 100), tag="truck3_update")
 
 
 
