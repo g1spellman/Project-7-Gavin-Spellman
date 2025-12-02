@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e3e282c-2001-4c48-b975-996d6ade7948" name="Changes" comment="Boy is in the correct spot, spawns in on side but normal once it moves">
+    <list default="true" id="3e3e282c-2001-4c48-b975-996d6ade7948" name="Changes" comment="Starting on trucks">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Class work example.py" beforeDir="false" afterPath="$PROJECT_DIR$/Class work example.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project 7, Gavin Spellman.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project 7, Gavin Spellman.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SampleImages/SampleImages/dumper_1_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/dumper_1_2.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +198,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764690262892</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Starting on trucks">
+      <option name="closed" value="true" />
+      <created>1764690520503</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1764690520503</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -215,6 +224,7 @@
     <MESSAGE value="got boy in postion, need to make him small" />
     <MESSAGE value="saving to test code" />
     <MESSAGE value="Boy is in the correct spot, spawns in on side but normal once it moves" />
-    <option name="LAST_COMMIT_MESSAGE" value="Boy is in the correct spot, spawns in on side but normal once it moves" />
+    <MESSAGE value="Starting on trucks" />
+    <option name="LAST_COMMIT_MESSAGE" value="Starting on trucks" />
   </component>
 </project>
