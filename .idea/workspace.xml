@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e3e282c-2001-4c48-b975-996d6ade7948" name="Changes" comment="got boy in postion, need to make him small">
+    <list default="true" id="3e3e282c-2001-4c48-b975-996d6ade7948" name="Changes" comment="Boy is in the correct spot, spawns in on side but normal once it moves">
       <change beforePath="$PROJECT_DIR$/Project 7, Gavin Spellman.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project 7, Gavin Spellman.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleImages/SampleImages/dumper_1_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/dumper_1_2.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +181,23 @@
       <option name="project" value="LOCAL" />
       <updated>1764689669920</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="saving to test code">
+      <option name="closed" value="true" />
+      <created>1764689988294</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1764689988294</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Boy is in the correct spot, spawns in on side but normal once it moves">
+      <option name="closed" value="true" />
+      <created>1764690262892</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1764690262892</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -196,6 +213,8 @@
     <MESSAGE value="Attempting to get boy 1 to move" />
     <MESSAGE value="got boy1 to load, however he is behind everything. Also note to self: character images must be in same file layer as project" />
     <MESSAGE value="got boy in postion, need to make him small" />
-    <option name="LAST_COMMIT_MESSAGE" value="got boy in postion, need to make him small" />
+    <MESSAGE value="saving to test code" />
+    <MESSAGE value="Boy is in the correct spot, spawns in on side but normal once it moves" />
+    <option name="LAST_COMMIT_MESSAGE" value="Boy is in the correct spot, spawns in on side but normal once it moves" />
   </component>
 </project>
