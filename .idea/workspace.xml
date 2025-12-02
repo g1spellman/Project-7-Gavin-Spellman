@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e3e282c-2001-4c48-b975-996d6ade7948" name="Changes" comment="One truck, unmoving and large">
+    <list default="true" id="3e3e282c-2001-4c48-b975-996d6ade7948" name="Changes" comment="One truck moving, need it to loop now">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project 7, Gavin Spellman.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project 7, Gavin Spellman.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -212,7 +213,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764693080670</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="One truck moving, need it to loop now">
+      <option name="closed" value="true" />
+      <created>1764693578728</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1764693578728</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -232,6 +241,7 @@
     <MESSAGE value="Boy is in the correct spot, spawns in on side but normal once it moves" />
     <MESSAGE value="Starting on trucks" />
     <MESSAGE value="One truck, unmoving and large" />
-    <option name="LAST_COMMIT_MESSAGE" value="One truck, unmoving and large" />
+    <MESSAGE value="One truck moving, need it to loop now" />
+    <option name="LAST_COMMIT_MESSAGE" value="One truck moving, need it to loop now" />
   </component>
 </project>

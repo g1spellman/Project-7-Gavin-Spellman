@@ -24,7 +24,7 @@ def move_boy(sender, app_data):
 #--------Trucks Near Store-------------------------
 truck_x=0
 truck_y=100
-truck_speed=5
+truck_speed=15
 truck_w, truck_h, channels, truck_file_pict= dearpy.load_image("dumper_1_2.png")
 #---------------------------------------------------
 dearpy.create_context()
@@ -81,9 +81,11 @@ with dearpy.window(label='Get to the car!', width=900, height=1000):
         #Boy
         dearpy.draw_image("boy1_pict", (boy_x, boy_y),
                           (boy_x + boy_w+100, boy_y + boy_h+100), tag="boy_update")
-        #Truck
+        #Truck 1
         dearpy.draw_image("truck_pict", (truck_x, truck_y),
                           (truck_x + boy_w+100, truck_y + boy_h+100), tag="truck_update")
+        #Truck 2
+        #Truck 3
 
 
 
@@ -100,7 +102,9 @@ with dearpy.window(label='Get to the car!', width=900, height=1000):
 dearpy.setup_dearpygui()
 dearpy.show_viewport()
 while dearpy.is_dearpygui_running():
-    truck_x+= 1
+    truck_x+= truck_speed
+    if truck_x>=900 or truck_x <=0:
+         truck_speed=-truck_speed
     dearpy.configure_item("truck_update", pmin=(truck_x, truck_y), pmax=(truck_x+truck_w, truck_y+truck_h))
     dearpy.render_dearpygui_frame()
 dearpy.start_dearpygui()
