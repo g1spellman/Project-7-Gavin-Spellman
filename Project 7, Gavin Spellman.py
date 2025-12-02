@@ -43,11 +43,15 @@ dog_y=300
 dog_speed=7
 dog_w, dog_h, channels, dog_file_pict= dearpy.load_image("dog2.png")
 #------Dog 2----------------------------------------
-dog2_x=3001
+dog2_x=300
 dog2_y=300
 dog2_speed=7
 dog2_w, dog2_h, channels, dog2_file_pict= dearpy.load_image("dog2.png")
-
+#-----Bear-------------------------------------------
+bear_x=0
+bear_y=400
+bear_speed=7
+bear_w, bear_h, channels, bear_file_pict= dearpy.load_image("bear.png")
 
 
 
@@ -65,6 +69,7 @@ with dearpy.texture_registry():
     dearpy.add_static_texture(truck3_w, truck3_h, truck3_file_pict, tag="truck3_pict")
     dearpy.add_static_texture(dog_w, dog_h, dog_file_pict, tag="dog_pict")
     dearpy.add_static_texture(dog2_w, dog2_h, dog2_file_pict, tag="dog2_pict")
+    dearpy.add_static_texture(bear_w, bear_h, bear_file_pict, tag="bear_pict")
 
 #------------------------------------------------
 with dearpy.handler_registry():
@@ -127,6 +132,10 @@ with dearpy.window(label='Get to the Car!', width=900, height=1000):
         #Dog 2
         dearpy.draw_image("dog2_pict", (dog2_x, dog2_y),
                           (dog2_x + dog2_w+100, dog2_y + dog2_h+100), tag="dog2_update")
+        #Bear
+        dearpy.draw_image("bear_pict", (bear_x, bear_y),
+                          (bear_x+bear_w+100, bear_y + bear_h+100), tag="bear_update")
+
 
 
 
@@ -167,6 +176,11 @@ while dearpy.is_dearpygui_running():
     if dog2_x >= 900 or dog2_x <= 0:
         dog2_speed = -dog2_speed
     dearpy.configure_item("dog2_update", pmin=(dog2_x, dog2_y), pmax=(dog2_x + dog2_w+50, dog2_y + dog2_h+50))
+    #Bear
+    bear_x += bear_speed
+    if bear_x >= 900 or bear_x <= 0:
+        bear_speed = -bear_speed
+    dearpy.configure_item("bear_update", pmin=(bear_x, bear_y), pmax=(bear_x + bear_w, bear_y + bear_h))
 
 
 #Additional Boiler Plate

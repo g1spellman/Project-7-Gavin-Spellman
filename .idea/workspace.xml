@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e3e282c-2001-4c48-b975-996d6ade7948" name="Changes" comment="Dogs added, they are bouncing across. Need to make them less small">
+    <list default="true" id="3e3e282c-2001-4c48-b975-996d6ade7948" name="Changes" comment="Dogs added. found that i could make the width and height a bit bigger. Onto the bear">
       <change beforePath="$PROJECT_DIR$/Project 7, Gavin Spellman.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project 7, Gavin Spellman.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SampleImages/SampleImages/bear.png" beforeDir="false" afterPath="$PROJECT_DIR$/bear.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -277,7 +278,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764708953502</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Dogs added. found that i could make the width and height a bit bigger. Onto the bear">
+      <option name="closed" value="true" />
+      <created>1764709878075</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1764709878075</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -304,6 +313,7 @@
     <MESSAGE value="All trucks loaded, 2 and 3 need to get to the correct size and loacation and move as well" />
     <MESSAGE value="All trucks working, collision needed but will work on later. Onto the grass area" />
     <MESSAGE value="Dogs added, they are bouncing across. Need to make them less small" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dogs added, they are bouncing across. Need to make them less small" />
+    <MESSAGE value="Dogs added. found that i could make the width and height a bit bigger. Onto the bear" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dogs added. found that i could make the width and height a bit bigger. Onto the bear" />
   </component>
 </project>
