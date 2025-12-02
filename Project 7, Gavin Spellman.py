@@ -24,18 +24,18 @@ def move_boy(sender, app_data):
 #--------Truck 1-------------------------
 truck_x=0
 truck_y=100
-truck_speed=15
+truck_speed=7
 truck_w, truck_h, channels, truck_file_pict= dearpy.load_image("dumper_1_2.png")
 #---------Truck 2----------------------------------
 truck2_x=0
 truck2_y=200
-truck2_speed=15
+truck2_speed=7
 truck2_w, truck2_h, channels, truck2_file_pict= dearpy.load_image("dumper_1_2.png")
 
 #--------Truck 3----------------------------------
-truck3_x=0
-truck3_y=300
-truck3_speed=15
+truck3_x=300
+truck3_y=200
+truck3_speed=7
 truck3_w, truck3_h, channels, truck3_file_pict= dearpy.load_image("dumper_1_2.png")
 #--------------------------------------------------
 dearpy.create_context()
@@ -48,8 +48,8 @@ with dearpy.texture_registry():
 #------------------------------------------------
 with dearpy.handler_registry():
     dearpy.add_key_press_handler(callback=move_boy)
-dearpy.create_viewport(title='Get to the car!', width=900, height=1000)
-with dearpy.window(label='Get to the car!', width=900, height=1000):
+dearpy.create_viewport(title='Get to the Car!', width=900, height=1000)
+with dearpy.window(label='Get to the Car!', width=900, height=1000):
     with dearpy.drawlist(width=900, height=900):
 #-----------BACKGROUND ELEMENTS-------------------------------------------
         # Store
@@ -117,10 +117,23 @@ with dearpy.window(label='Get to the car!', width=900, height=1000):
 #Boiler Plate----------------------------------------------------------
 dearpy.setup_dearpygui()
 dearpy.show_viewport()
+#Movement
 while dearpy.is_dearpygui_running():
+    #Truck 1
     truck_x+= truck_speed
     if truck_x>=900:
          truck_x=-truck_w
     dearpy.configure_item("truck_update", pmin=(truck_x, truck_y), pmax=(truck_x+truck_w, truck_y+truck_h))
+    #Truck 2
+    truck2_x += truck2_speed
+    if truck2_x >= 900:
+        truck2_x = -truck2_w
+    dearpy.configure_item("truck2_update", pmin=(truck2_x, truck2_y), pmax=(truck2_x + truck2_w, truck2_y + truck2_h))
+    #Truck 3
+    truck3_x += truck3_speed
+    if truck3_x >= 900:
+        truck3_x = -truck3_w
+    dearpy.configure_item("truck3_update", pmin=(truck3_x, truck3_y), pmax=(truck3_x + truck3_w, truck3_y + truck3_h))
+#Additional Boiler Plate
     dearpy.render_dearpygui_frame()
 dearpy.start_dearpygui()

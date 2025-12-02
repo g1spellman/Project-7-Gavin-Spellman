@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e3e282c-2001-4c48-b975-996d6ade7948" name="Changes" comment="Setting up truck images">
+    <list default="true" id="3e3e282c-2001-4c48-b975-996d6ade7948" name="Changes" comment="All trucks loaded, 2 and 3 need to get to the correct size and loacation and move as well">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project 7, Gavin Spellman.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project 7, Gavin Spellman.py" afterDir="false" />
     </list>
@@ -254,7 +254,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764696549182</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="All trucks loaded, 2 and 3 need to get to the correct size and loacation and move as well">
+      <option name="closed" value="true" />
+      <created>1764705557045</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1764705557045</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -278,6 +286,7 @@
     <MESSAGE value="Truck is bouncing" />
     <MESSAGE value="Truck now loops, Now in need to repeat it two more times" />
     <MESSAGE value="Setting up truck images" />
-    <option name="LAST_COMMIT_MESSAGE" value="Setting up truck images" />
+    <MESSAGE value="All trucks loaded, 2 and 3 need to get to the correct size and loacation and move as well" />
+    <option name="LAST_COMMIT_MESSAGE" value="All trucks loaded, 2 and 3 need to get to the correct size and loacation and move as well" />
   </component>
 </project>
