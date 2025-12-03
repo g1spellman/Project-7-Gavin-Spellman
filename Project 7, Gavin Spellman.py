@@ -17,6 +17,7 @@ def do_overlap(l1, r1, l2, r2):
 boy_x=400
 boy_y=0
 boy_speed=7
+gameover=False
 boy_w, boy_h, channels, boy1_file_pict= dearpy.load_image("boy1.png")
 def move_boy(sender, app_data):
     key=app_data
@@ -173,6 +174,22 @@ with dearpy.window(label='Get to the Car!', width=900, height=1000):
         #Van
         dearpy.draw_image("van_pict", (van_x, van_y),
                           (van_x+van_w+100, van_y + van_h+200), tag="van_update")
+        #Game Over Text
+        #dearpy.draw_text((200, 300), "GAME OVER",
+                                #color=comp151Colors.RED, size=100)
+        #You Win Text
+        #dearpy.draw_text((200, 300), "YOU WIN",
+                                #color=comp151Colors.RED, size=100)
+
+
+
+
+
+
+
+
+
+
 #Boiler Plate----------------------------------------------------------
 dearpy.setup_dearpygui()
 dearpy.show_viewport()
@@ -228,6 +245,8 @@ while dearpy.is_dearpygui_running():
     if van_x >= 900 or van_x <= 0:
         van_speed = -van_speed
     dearpy.configure_item("van_update", pmin=(van_x, van_y), pmax=(van_x + 100, van_y + 200))
+    #Death by truck, bear and car
+
 
 #Additional Boiler Plate
     dearpy.render_dearpygui_frame()
