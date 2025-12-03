@@ -250,8 +250,14 @@ while dearpy.is_dearpygui_running():
     boy_upper_left={"x":boy_x, "y":boy_y}
     boy_lower_right={"x":boy_x+100, "y":boy_y+100}
     #Truck
+    truck_upper_left={"x":truck_x, "y":truck_y}
+    truck_lower_right= {"x":truck_x+truck_w, "y":truck_y+truck_h}
     #Truck 2
+    truck2_upper_left = {"x": truck2_x, "y": truck2_y}
+    truck2_lower_right = {"x": truck2_x + truck2_w, "y": truck2_y + truck2_h}
     #Truck 3
+    truck3_upper_left = {"x": truck3_x, "y": truck3_y}
+    truck3_lower_right = {"x": truck3_x + truck3_w, "y": truck3_y + truck3_h}
     #Dog
     #Dog2
     #Bear

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e3e282c-2001-4c48-b975-996d6ade7948" name="Changes" comment="Making collison for everything">
+    <list default="true" id="3e3e282c-2001-4c48-b975-996d6ade7948" name="Changes" comment="Boy collision added">
       <change beforePath="$PROJECT_DIR$/Project 7, Gavin Spellman.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project 7, Gavin Spellman.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -349,11 +349,18 @@
       <option name="project" value="LOCAL" />
       <updated>1764798722057</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Boy collision added">
+      <option name="closed" value="true" />
+      <created>1764799324920</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1764799324920</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added lines for parking lot, doors, and car placeholder" />
     <MESSAGE value="Begining to add images" />
     <MESSAGE value="Attempting to get boy 1 to move" />
     <MESSAGE value="got boy1 to load, however he is behind everything. Also note to self: character images must be in same file layer as project" />
@@ -378,6 +385,7 @@
     <MESSAGE value="added overlap code" />
     <MESSAGE value="Beginging stages for making cars, bears and trucks deadly" />
     <MESSAGE value="Making collison for everything" />
-    <option name="LAST_COMMIT_MESSAGE" value="Making collison for everything" />
+    <MESSAGE value="Boy collision added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Boy collision added" />
   </component>
 </project>
