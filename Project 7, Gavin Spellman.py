@@ -6,7 +6,7 @@ import comp151Colors
 #----------------Player Character-----------------------
 boy_x=400
 boy_y=0
-boy_speed=5
+boy_speed=7
 boy_w, boy_h, channels, boy1_file_pict= dearpy.load_image("boy1.png")
 def move_boy(sender, app_data):
     key=app_data
@@ -53,17 +53,17 @@ bear_y=400
 bear_speed=7
 bear_w, bear_h, channels, bear_file_pict= dearpy.load_image("bear.png")
 #----Car----------------------------------------------
-car_x=100
+car_x=300
 car_y=500
 car_speed=7
 car_w, car_h, channels, car_file_pict= dearpy.load_image("firebrigade_1_2.png")
 #-----Car2--------------------------------------------
-car2_x=300
+car2_x=500
 car2_y=500
 car2_speed=7
 car2_w, car2_h, channels, car2_file_pict= dearpy.load_image("firebrigade_1_2.png")
 #-----Car3--------------------------------------------
-car3_x=500
+car3_x=700
 car3_y=500
 car3_speed=7
 car3_w, car3_h, channels, car3_file_pict= dearpy.load_image("firebrigade_1_2.png")
@@ -207,19 +207,19 @@ while dearpy.is_dearpygui_running():
         bear_speed = -bear_speed
     dearpy.configure_item("bear_update", pmin=(bear_x, bear_y), pmax=(bear_x + bear_w, bear_y + bear_h))
     #Car
-    car_x += -car_speed
-    if car_x <= 900:
-        car_x = -car_w
+    car_x -= car_speed
+    if car_x < -car_w:
+        car_x = 900 + car_w
     dearpy.configure_item("car_update", pmin=(car_x, car_y), pmax=(car_x + car_w, car_y + car_h))
     #Car 2
-    car2_x += -car2_speed
-    if car2_x >= 900:
-        car2_x = -car2_w
+    car2_x -= car2_speed
+    if car2_x < -car2_w:
+        car2_x = 900 +car2_w
     dearpy.configure_item("car2_update", pmin=(car2_x, car2_y), pmax=(car2_x + car2_w, car2_y + car2_h))
     #Car 3
-    car3_x += -car3_speed
-    if car3_x >= 900:
-        car3_x = -car3_w
+    car3_x -= car3_speed
+    if car3_x < -car3_w:
+        car3_x = 900+ car3_w
     dearpy.configure_item("car3_update", pmin=(car3_x, car3_y), pmax=(car3_x + car3_w, car3_y + car3_h))
 
 

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e3e282c-2001-4c48-b975-996d6ade7948" name="Changes" comment="pausing. trucks added but still not fully implimented">
+    <list default="true" id="3e3e282c-2001-4c48-b975-996d6ade7948" name="Changes" comment="Trucks implimented. Need them to move the other way">
       <change beforePath="$PROJECT_DIR$/Project 7, Gavin Spellman.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project 7, Gavin Spellman.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -301,11 +301,18 @@
       <option name="project" value="LOCAL" />
       <updated>1764711654934</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Trucks implimented. Need them to move the other way">
+      <option name="closed" value="true" />
+      <created>1764769123549</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1764769123549</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Uploaded colors and dearpygui" />
     <MESSAGE value="Boilerplate and work from class added" />
     <MESSAGE value="starting creation of background elements" />
     <MESSAGE value="Store added" />
@@ -330,6 +337,7 @@
     <MESSAGE value="Dogs added. found that i could make the width and height a bit bigger. Onto the bear" />
     <MESSAGE value="Bears added, onto the trucks" />
     <MESSAGE value="pausing. trucks added but still not fully implimented" />
-    <option name="LAST_COMMIT_MESSAGE" value="pausing. trucks added but still not fully implimented" />
+    <MESSAGE value="Trucks implimented. Need them to move the other way" />
+    <option name="LAST_COMMIT_MESSAGE" value="Trucks implimented. Need them to move the other way" />
   </component>
 </project>
