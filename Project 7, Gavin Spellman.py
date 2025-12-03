@@ -3,6 +3,16 @@
 import dearpygui.dearpygui as dearpy
 #Colors
 import comp151Colors
+#--------Overlap Checker--------------------------------
+def do_overlap(l1, r1, l2, r2):
+    # If one rectangle is to the left of the other
+    if l1.get('x') > r2.get('x') or l2.get('x') > r1.get('x'):
+        return False
+
+    # If one rectangle is above the other
+    if r1.get('y') < l2.get('y') or r2.get('y') < l1.get('y'):
+        return False
+    return True
 #----------------Player Character-----------------------
 boy_x=400
 boy_y=0
