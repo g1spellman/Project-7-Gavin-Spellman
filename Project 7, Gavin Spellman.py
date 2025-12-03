@@ -67,14 +67,12 @@ car3_x=700
 car3_y=500
 car3_speed=7
 car3_w, car3_h, channels, car3_file_pict= dearpy.load_image("firebrigade_1_2.png")
-
-
-
-
-
-
-
-#--------------------------------------------------
+#-----Van---------------------------------------------
+van_x=0
+van_y=600
+van_speed=0
+van_w, van_h, channels, van_file_pict= dearpy.load_image("van1.png")
+#-------Work Area--------------------------------------
 dearpy.create_context()
 #Texture Loadout (add each time)
 with dearpy.texture_registry():
@@ -88,6 +86,7 @@ with dearpy.texture_registry():
     dearpy.add_static_texture(car_w, car_h, car_file_pict, tag="car_pict")
     dearpy.add_static_texture(car2_w, car2_h, car2_file_pict, tag="car2_pict")
     dearpy.add_static_texture(car2_w, car2_h, car2_file_pict, tag="car3_pict")
+    dearpy.add_static_texture(van_w, van_h, van_file_pict, tag="van_pict")
 #------------------------------------------------
 with dearpy.handler_registry():
     dearpy.add_key_press_handler(callback=move_boy)
@@ -112,23 +111,23 @@ with dearpy.window(label='Get to the Car!', width=900, height=1000):
         dearpy.draw_rectangle((0, 500), (900, 700),
                               color=comp151Colors.WHITE, fill=comp151Colors.BLACK)
         # Parking lot
-        dearpy.draw_rectangle((0, 700), (900, 900),
+        dearpy.draw_rectangle((0, 600), (900, 900),
                           color=comp151Colors.WHITE, fill=comp151Colors.BLACK)
-        dearpy.draw_line((100, 700), (100, 900),
+        dearpy.draw_line((100, 600), (100, 900),
                          color=comp151Colors.WHITE)
-        dearpy.draw_line((200, 700), (200, 900),
+        dearpy.draw_line((200, 600), (200, 900),
                          color=comp151Colors.WHITE)
-        dearpy.draw_line((300, 700), (300, 900),
+        dearpy.draw_line((300, 600), (300, 900),
                          color=comp151Colors.WHITE)
-        dearpy.draw_line((400, 700), (400, 900),
+        dearpy.draw_line((400, 600), (400, 900),
                          color=comp151Colors.WHITE)
-        dearpy.draw_line((500, 700), (500, 900),
+        dearpy.draw_line((500, 600), (500, 900),
                          color=comp151Colors.WHITE)
-        dearpy.draw_line((600, 700), (600, 900),
+        dearpy.draw_line((600, 600), (600, 900),
                          color=comp151Colors.WHITE)
-        dearpy.draw_line((700, 700), (700, 900),
+        dearpy.draw_line((700, 600), (700, 900),
                          color=comp151Colors.WHITE)
-        dearpy.draw_line((800, 700), (800, 900),
+        dearpy.draw_line((800, 600), (800, 900),
                          color=comp151Colors.WHITE)
 #-------------CHARACTERS--------------------------------------------------------
         #Boy
@@ -161,16 +160,9 @@ with dearpy.window(label='Get to the Car!', width=900, height=1000):
         #Car 3
         dearpy.draw_image("car3_pict", (car3_x, car3_y),
                           (car3_x+car3_w+100, car3_y + car3_h+100), tag="car3_update")
-
-
-
-
-
-
-
-
-
-
+        #Van
+        dearpy.draw_image("van_pict", (van_x, van_y),
+                          (van_x+van_w+100, van_y + van_h+200), tag="van_update")
 #Boiler Plate----------------------------------------------------------
 dearpy.setup_dearpygui()
 dearpy.show_viewport()
@@ -221,7 +213,11 @@ while dearpy.is_dearpygui_running():
     if car3_x < -car3_w:
         car3_x = 900+ car3_w
     dearpy.configure_item("car3_update", pmin=(car3_x, car3_y), pmax=(car3_x + car3_w, car3_y + car3_h))
-
+    #Van (not moving but movement makes it normal-sized)
+    van_x += van_speed
+    if van_x >= 900 or van_x <= 0:
+        van_speed = -van_speed
+    dearpy.configure_item("van_update", pmin=(van_x, van_y), pmax=(van_x + 100, van_y + 200))
 
 #Additional Boiler Plate
     dearpy.render_dearpygui_frame()
