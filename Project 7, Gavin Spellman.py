@@ -246,9 +246,9 @@ while dearpy.is_dearpygui_running():
         van_speed = -van_speed
     dearpy.configure_item("van_update", pmin=(van_x, van_y), pmax=(van_x + 100, van_y + 200))
 #------Collison-------------------------------------------------
-    #Boy
-    boy_upper_left=
-    boy_lower_right=
+    #Boy (keep 100 to match sprite size)
+    boy_upper_left={"x":boy_x, "y":boy_y}
+    boy_lower_right={"x":boy_x+100, "y":boy_y+100}
     #Truck
     #Truck 2
     #Truck 3
@@ -258,7 +258,7 @@ while dearpy.is_dearpygui_running():
     #Car
     #Car 2
     #Car 3
-    #
+    #Van
 
 
 #Additional Boiler Plate
