@@ -53,17 +53,17 @@ bear_y=400
 bear_speed=7
 bear_w, bear_h, channels, bear_file_pict= dearpy.load_image("bear.png")
 #----Car----------------------------------------------
-car_x=0
+car_x=100
 car_y=500
 car_speed=7
 car_w, car_h, channels, car_file_pict= dearpy.load_image("firebrigade_1_2.png")
 #-----Car2--------------------------------------------
-car2_x=0
+car2_x=300
 car2_y=500
 car2_speed=7
 car2_w, car2_h, channels, car2_file_pict= dearpy.load_image("firebrigade_1_2.png")
 #-----Car3--------------------------------------------
-car3_x=0
+car3_x=500
 car3_y=500
 car3_speed=7
 car3_w, car3_h, channels, car3_file_pict= dearpy.load_image("firebrigade_1_2.png")
@@ -85,7 +85,9 @@ with dearpy.texture_registry():
     dearpy.add_static_texture(dog_w, dog_h, dog_file_pict, tag="dog_pict")
     dearpy.add_static_texture(dog2_w, dog2_h, dog2_file_pict, tag="dog2_pict")
     dearpy.add_static_texture(bear_w, bear_h, bear_file_pict, tag="bear_pict")
-
+    dearpy.add_static_texture(car_w, car_h, car_file_pict, tag="car_pict")
+    dearpy.add_static_texture(car2_w, car2_h, car2_file_pict, tag="car2_pict")
+    dearpy.add_static_texture(car2_w, car2_h, car2_file_pict, tag="car3_pict")
 #------------------------------------------------
 with dearpy.handler_registry():
     dearpy.add_key_press_handler(callback=move_boy)
@@ -150,7 +152,15 @@ with dearpy.window(label='Get to the Car!', width=900, height=1000):
         #Bear
         dearpy.draw_image("bear_pict", (bear_x, bear_y),
                           (bear_x+bear_w+100, bear_y + bear_h+100), tag="bear_update")
-
+        #Car
+        dearpy.draw_image("car_pict", (car_x, car_y),
+                          (car_x+car_w+100, car_y + car_h+100), tag="car_update")
+        #Car 2
+        dearpy.draw_image("car2_pict", (car2_x, car2_y),
+                          (car2_x+car2_w+100, car2_y + car2_h+100), tag="car2_update")
+        #Car 3
+        dearpy.draw_image("car3_pict", (car3_x, car3_y),
+                          (car3_x+car3_w+100, car3_y + car3_h+100), tag="car3_update")
 
 
 
@@ -196,6 +206,21 @@ while dearpy.is_dearpygui_running():
     if bear_x >= 900 or bear_x <= 0:
         bear_speed = -bear_speed
     dearpy.configure_item("bear_update", pmin=(bear_x, bear_y), pmax=(bear_x + bear_w, bear_y + bear_h))
+    #Car
+    car_x += -car_speed
+    if car_x <= 900:
+        car_x = -car_w
+    dearpy.configure_item("car_update", pmin=(car_x, car_y), pmax=(car_x + car_w, car_y + car_h))
+    #Car 2
+    car2_x += -car2_speed
+    if car2_x >= 900:
+        car2_x = -car2_w
+    dearpy.configure_item("car2_update", pmin=(car2_x, car2_y), pmax=(car2_x + car2_w, car2_y + car2_h))
+    #Car 3
+    car3_x += -car3_speed
+    if car3_x >= 900:
+        car3_x = -car3_w
+    dearpy.configure_item("car3_update", pmin=(car3_x, car3_y), pmax=(car3_x + car3_w, car3_y + car3_h))
 
 
 #Additional Boiler Plate
