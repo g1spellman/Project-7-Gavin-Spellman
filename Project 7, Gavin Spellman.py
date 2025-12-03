@@ -245,7 +245,20 @@ while dearpy.is_dearpygui_running():
     if van_x >= 900 or van_x <= 0:
         van_speed = -van_speed
     dearpy.configure_item("van_update", pmin=(van_x, van_y), pmax=(van_x + 100, van_y + 200))
-    #Death by truck, bear and car
+#------Collison-------------------------------------------------
+    #Boy
+    boy_upper_left=
+    boy_lower_right=
+    #Truck
+    #Truck 2
+    #Truck 3
+    #Dog
+    #Dog2
+    #Bear
+    #Car
+    #Car 2
+    #Car 3
+    #
 
 
 #Additional Boiler Plate
